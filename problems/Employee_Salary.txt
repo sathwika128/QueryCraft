@@ -1,0 +1,3 @@
+Given a table named employees with columns employee_id, employee_name, department, and salary, 
+write a SQL query to retrieve each employee's ID, name, department, salary, and the salary of the previous employee in the same department 
+based on employee_id. If there is no previous employee, the value should be NULL. Name the column for the previous employee's salary as previous_salary.
