@@ -1,0 +1,61 @@
+Consider the following tables in a database:
+
+
+
+Input:
+
+Table Name 1: Products
+
+
+
+ProductID (Primary Key): Unique identifier for each product.
+ProductName: Name of the product.
+CategoryID (Foreign Key): Identifier linking the product to its category.
+Unit: Measurement unit in which the product is sold.
+Price: Price of the product.
+
+
+Table Name 2: Order_Details
+
+
+
+OrderID (Foreign Key): Identifier linking the order to a specific order in the Orders table.
+ProductID (Foreign Key): Identifier linking the order to a specific product in the Products table.
+Quantity: The quantity of the product ordered in this order.
+
+
+Table Name 3: Orders
+
+
+
+OrderID (Primary Key): Unique identifier for each order.
+CustomerID (Foreign Key): Identifier linking the order to a specific customer in the Customers table.
+EmployeeID (Foreign Key): Identifier linking the order to a specific employee in the Employees table.
+OrderDate: Date when the order was placed.
+ShipperID (Foreign Key): Identifier linking the order to a specific shipper in the Shippers table.
+
+
+Table Name 4: Shippers
+
+ShipperID: A unique identifier for each shipper.
+ShipperName: The name of the shipping company.
+Phone: The contact phone number for the shipper.
+
+
+Using the Shippers, orders, orderdetails, and Products tables, write a SQL query to calculate the total sales (rounded up to 2 decimals) for each shipper by order date. Additionally, calculate the cumulative sales (rounded up to 2 decimals) for each shipper up to and including each order date.
+
+
+
+Output Format:
+
++-----------+------------------+------------+-------------+------------------+
+| shipperid | shippername      | orderdate  | total_sales | cumulative_sales |
++-----------+------------------+------------+-------------+------------------+
+|         1 | Speedy Express   | 1996-07-05 |     2329.25 |          2329.25 |
+|         1 | Speedy Express   | 1996-07-08 |       839.5 |          3168.75 |
+|         1 | Speedy Express   | 1996-07-17 |     2529.75 |           5698.5 |
+|         1 | Speedy Express   | 1996-07-19 |      2183.9 |           7882.4 |
+|         1 | Speedy Express   | 1996-07-25 |        1470 |           9352.4 |
+------------------------------------------------------------------------------
+
+NOTE: The output format might not contain all the rows present in the returned table.
