@@ -1,0 +1,17 @@
+Your team at JPMorgan Chase is preparing to launch a new credit card and needs to estimate how many cards will be issued in its first month.
+
+Your task is to write a SQL query to find out how many cards were issued in the first month of previous card launches. The query should display each credit card's name alongside the quantity issued in its launch month.
+
+Hint: To identify the launch month, refer to the earliest record for each card
+
+monthly_cards_issued table:
+
+Column Name	Description
+issue_month 	The month the redit card was issued
+issue_year	The year the credit card was issued
+card_name	The name of the credit card
+issued_amount	The number of credit cards issued
+Example output:
+card_name	issued_amount
+Chase Sapphire Reserve	170000
+Chase Freedom Flex	65000
