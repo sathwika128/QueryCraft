@@ -1,0 +1,10 @@
+You have a table named Products with the following columns: ProductID, Category, and Price. Write an SQL query to calculate an adjusted price for each product based on its category. The adjusted price should be:
+
+
+
+10% higher for products in the 'Electronics' category.
+5% higher for products in the 'Books' category.
+The same is true for the original price for all other categories.
+
+
+The query should return the ProductID, Category, Price, and Adjusted Price for each product
