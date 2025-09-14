@@ -1,0 +1,5 @@
+You have been provided with the employees' database. In this database, there are two tables, namely employees and titles.
+
+
+Using the employees' database, you need to find all the employees hired after 1990 who have had more than two promotions.
+You need to show the results in the increasing order of employee number.
