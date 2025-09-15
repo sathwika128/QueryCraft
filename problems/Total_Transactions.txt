@@ -1,0 +1,5 @@
+Using the transaction data, create an SQL query to calculate the total number of transactions 
+and the total transaction amount for each month and year. Filter the results to include only the top three months with the highest transaction volume. 
+The returned table must contain year, month, TotalTransactions and TotalAmount column.
+
+NOTE: The output format might not contain all the rows present in the returned table.
