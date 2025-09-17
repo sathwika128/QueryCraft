@@ -1,0 +1,16 @@
+The sales team wants to evaluate the performance of merchants by creating a score based on their transaction amounts. The score is calculated as follows:
+
+If total transactions exceed $50,000, the score is 'Excellent'
+If total transactions are greater than $20,000 and lesser than or equal to $50,000, the score is 'Good'
+If total transactions are greater than $10,000 and lesser than or equal to $20,000, the score is 'Average'
+If total transactions are lesser than or equal to $10,000, the score is 'Below Average'
+
+Write a query to assign a performance score to each merchant and calculate the average transaction amount for each performance category for the period from November 2023 to April 2024.
+
+
+
+Hints:
+
+Use the Transactions and Merchants table.
+Include performance_score and total_received in your result. Use a case expression to order based on the performance_score (total transaction_amount), don’t sort alphabetically by the score. 
+Then, sort by total_received in descending order.
