@@ -1,0 +1,43 @@
+You are an analyst and you are being given by the following tables with the following columns.
+
+
+
+Input:
+
+Table Name 1: Categories
+
+CategoryID: Unique identifier for each category.
+Category Name: Name of the category.
+Description: Category description.
+
+
+Table Name 2: Products
+
+ProductID (Primary Key): Unique identifier for each product.
+ProductName: Name of the product.
+CategoryID (Foreign Key): Identifier linking the product to its category.
+Unit: Measurement unit in which the product is sold.
+Price: Price of the product.
+
+
+Table Name 3: Order_Details
+
+OrderID (Foreign Key): Identifier linking the order to a specific order in the Orders table.
+ProductID (Foreign Key): Identifier linking the order to a specific product in the Products table.
+Quantity: The quantity of the product ordered in this order.
+
+
+Table Name 4: Orders
+
+OrderID (Primary Key): Unique identifier for each order.
+CustomerID (Foreign Key): Identifier linking the order to a specific customer in the Customers table.
+EmployeeID (Foreign Key): Identifier linking the order to a specific employee in the Employees table.
+OrderDate: Date when the order was placed.
+ShipperID (Foreign Key): Identifier linking the order to a specific shipper in the Shippers table.
+
+
+Write a SQL query to find the total revenue for each product category, but only include orders placed on or after May 28, 1996,
+minus an interval of 4 months. Include only categories where the total revenue exceeds 10,000. Use the following tables: categories, products, order_details, and orders.
+
+
+NOTE: Round the output to 2 decimal places.
