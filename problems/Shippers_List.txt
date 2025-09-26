@@ -1,0 +1,23 @@
+You are an analyst and you have been given the following two tables:
+
+
+Input:
+
+Table Name 1: Orders
+
+OrderID (Primary Key): Unique identifier for each order.
+CustomerID (Foreign Key): Identifier linking the order to a specific customer in the Customers table.
+EmployeeID (Foreign Key): Identifier linking the order to a specific employee in the Employees table.
+OrderDate: Date when the order was placed.
+ShipperID (Foreign Key): Identifier linking the order to a specific shipper in the Shippers table.
+
+
+Table Name 2: Shippers
+
+ShipperID: A unique identifier for each shipper.
+ShipperName: The name of the shipping company.
+Phone: The contact phone number for the shipper.
+
+
+Using the provided database tables, write a query to list all shippers along with the total number of shipments they have handled. Additionally, categorize the shippers based on their total shipments into 'High' (if more than 60 shipments) and 'Low' (otherwise). Display the shipper name, total number of shipments, and their shipment category.
+
