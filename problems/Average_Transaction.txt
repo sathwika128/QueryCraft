@@ -1,0 +1,27 @@
+Examine how the average transaction amount varies between early (before 12 PM) and late (after 12 PM) transactions across different merchant categories. Analyze whether certain categories have higher spending earlier or later in the day and how this might inform business operational hours or promotional strategies. Also, round the values of the AverageAmount column to 2 decimal places.
+
+
+
+Hint:
+
+Use the Transaction, Merchant, and Merchant_Category table while solving the problem.
+It is suggested to explore the data using the DESCRIBE and SELECT statement before writing the queries which will help you understand the relationship between tables.
+The EarlyTransaction identifies transactions occurring before noon (12 PM) with a value of 1 and transactions occurring after or at noon with a value of 0. Use the provided t.date column to extract the hour for this calculation.
+
+
+Output Format:
+
++-------------+---------------+------------------+
+| Category    | AverageAmount | EarlyTransaction |
++-------------+---------------+------------------+
+| bar         |          58.4 |                1 |
+| bar         |         31.54 |                0 |
+| coffee shop |          31.3 |                1 |
+| coffee shop |         43.98 |                0 |
+| food truck  |         36.98 |                1 |
+| food truck  |         33.69 |                0 |
+| pub         |         33.62 |                1 |
+| pub         |         48.61 |                0 |
+| restaurant  |         34.27 |                1 |
+| restaurant  |         53.94 |                0 |
++-------------+---------------+------------------+
