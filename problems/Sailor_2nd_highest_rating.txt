@@ -1,0 +1,15 @@
+Fetch out the color, sailor id and boat id of the boats reserved by the Sailor having 2nd highest rating. Order the result based on the bid in descending order.
+
+
+Information about the table:
+Table sailors:
+sid,sname,rating,age 
+
+Table boats:
+bid,bname,color
+
+Table reserves:
+sid,bid,daytook
+
+Output:
+color,sid,bid
