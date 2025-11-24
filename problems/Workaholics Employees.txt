@@ -1,0 +1,18 @@
+Write a query to find workaholics employees.  Workaholics employees are those who satisfy at least one of the given criterions:
+
+ 
+
+1- Worked for more than 8 hours a day for at least 3 days in a week. 
+2- worked for more than 10 hours a day for at least 2 days in a week. 
+You are given the login and logout timings of all the employees for a given week. Write a SQL to find all the workaholic employees along with the criterion that they are satisfying (1,2 or both), display it in the order of increasing employee id
+
+ 
+
+Table: employees
++-------------+-----------+
+| COLUMN_NAME | DATA_TYPE |
++-------------+-----------+
+| emp_id      | int       |
+| login       | datetime  |
+| logout      | datetime  |
++-------------+-----------+
